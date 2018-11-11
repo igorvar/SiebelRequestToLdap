@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="02/17/2017 13:54:13"
+   UPDATED_BY="VIF"
+   CREATED="02/17/2017 13:31:19"
+   CREATED_BY="VIF"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   COMMENTS="LOCKED BY VTAO UI UPGRADE"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="HEB"
+	   LOCKED="Y"
+	   LOCKED_DATE="11/07/2018 14:29:17"
+	   NAME="Interactive"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="VIF"
+	   UPDATED="01/01/2000 00:01:24"
+	   UPDATED_BY="VIF"
+	   CREATED="10/20/1997 16:09:36"
+	   CREATED_BY="VIF"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSService"
+		   EXTERNAL_USE="Y"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="VIF ActiveDirectory Wrapper BS"
+		   OBJECT_LANGUAGE_LOCKED="HEB"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="01/01/2000 00:01:35"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   OBJECT_LOCKED_BY_NAME="VIF"
+		   UPDATED="01/01/2000 00:01:03"
+		   UPDATED_BY="VIF"
+		   CREATED="01/01/2000 00:01:19"
+		   CREATED_BY="VIF">
+			<BUSINESS_SERVICE_METHOD
+			   COMMENTS="VIF. Return date of password expiration for user in domain"
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="PasswordExpiration"
+			   UPDATED="01/01/2000 00:01:20"
+			   UPDATED_BY="VIF"
+			   CREATED="01/01/2000 00:01:20"
+			   CREATED_BY="VIF">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Current domain by default"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Domain"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input / Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ErrorCode"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ErrorDescription"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Date in format DD/MM/YYYY hh:mm:ss"
+				   DATA_TYPE="Date"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate day"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate hour"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate minute"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate month"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate second"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Number"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordExpirationDate year"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Y or N"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordNeverExpires"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Y or N"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PasswordRequired"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="UserName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="01/01/2000 00:01:20"
+				   UPDATED_BY="VIF"
+				   CREATED="01/01/2000 00:01:20"
+				   CREATED_BY="VIF">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ActiveDirectoryData"
+			   PROGRAM_LANGUAGE="SBL"
+			   SCRIPT="Sub ActiveDirectoryData(ips As PropertySet, ops As PropertySet)
+	&apos;VIF. 
+	&apos;Function return PasswordExpirationDate from Active Directory for UserName of Domain 
+	&apos;and Return ErrorCode = 0; ErrorDescription = &quot;OK&quot;
+	&apos;if Domain is missed function get data from current domain of SiebelServer
+	&apos;
+	Dim userName As String
+	Dim domain As String
+	Dim oAD As Object
+	Dim substrFrom As Integer
+	Dim substrTo As Integer
+	Dim flags As Long
+	Dim isPasswordNeverExpires As Long
+	userName = ips.GetProperty(&quot;UserName&quot;)
+	domain = ips.GetProperty(&quot;Domain&quot;)
+	If domain = &quot;&quot; Then
+		Set oAD = GetObject(&quot;LDAP://RootDSE&quot;)
+		domain = oAD.Get(&quot;defaultNamingContext&quot;) &apos;after this domain = DC=clalit,DC=org,DC=il
+&apos;		ops.SetProperty &quot;defaultNamingContext&quot;, domain &apos; for testing only
+		substrFrom = InStr(1, domain, &quot;DC=&quot;, 1)
+		substrTo = InStr(substrFrom, domain, &quot;,&quot;)
+		domain = Mid$(domain, substrFrom, substrTo - substrFrom) &apos;domain = DC=clalit
+
+		substrFrom = InStr(1, domain, &quot;=&quot;, 1)
+		domain = Mid$(domain, substrFrom + 1) &apos;domain = clalit
+	End If
+	
+	ops.SetProperty &quot;Domain&quot;, domain
+	On Error Resume Next
+	Set oAD = GetObject(&quot;WinNT://&quot; &amp; domain &amp; &quot;/&quot; &amp; userName &amp; &quot;, user&quot;)
+	Select Case Err
+		Case 0
+			On Error GoTo 0
+			ops.SetProperty &quot;ErrorDescription&quot;, &quot;Ok&quot;
+			ops.SetProperty &quot;PasswordExpirationDate&quot;, CStr(oAD.PasswordExpirationDate)
+			ops.SetProperty &quot;PasswordExpirationDate day&quot;, Day(oAD.PasswordExpirationDate)
+			ops.SetProperty &quot;PasswordExpirationDate month&quot;, Month(oAD.PasswordExpirationDate)
+			ops.SetProperty &quot;PasswordExpirationDate year&quot;, Year(oAD.PasswordExpirationDate)
+			ops.SetProperty &quot;PasswordExpirationDate hour&quot;, Hour(oAD.PasswordExpirationDate)
+			ops.SetProperty &quot;PasswordExpirationDate minute&quot;, Minute(oAD.PasswordExpirationDate)
+			ops.SetProperty &quot;PasswordExpirationDate second&quot;, Second(oAD.PasswordExpirationDate)
+			
+			If oAD.PasswordRequired = 0 Then ops.SetProperty &quot;PasswordRequired&quot;,  &quot;N&quot; Else ops.SetProperty &quot;PasswordRequired&quot;, &quot;Y&quot;
+			flags = CLng(oAD.Get(&quot;UserFlags&quot;))
+&apos;			ops.SetProperty &quot;flags&quot;, CStr(flags)
+			isPasswordNeverExpires = (flags And &amp;H10000) &apos;http://msdn.microsoft.com/en-us/library/aa746537(VS.85).aspx
+			If isPasswordNeverExpires = 0 Then ops.SetProperty &quot;PasswordNeverExpires&quot;, &quot;N&quot; Else ops.SetProperty &quot;PasswordNeverExpires&quot;, &quot;Y&quot;
+		Case 429
+			ops.SetProperty &quot;ErrorDescription&quot;, &quot;Imposible get data about user with name &apos;&quot; &amp; userName &amp; &quot;&apos; for domain &apos;&quot; &amp; domain &amp; &quot;&apos;&quot;
+		Case Else
+			ops.SetProperty &quot;ErrorDescription&quot;, &quot;Unknown error. Read Bookshelf &apos;Siebel VB Language Reference&quot;							
+	End Select
+	ops.SetProperty &quot;ErrorCode&quot;, CStr(Err)
+	Set oAD = Nothing
+
+End Sub"
+			   SEQUENCE="1"
+			   UPDATED="01/01/2000 00:01:20"
+			   UPDATED_BY="VIF"
+			   CREATED="01/01/2000 00:01:20"
+			   CREATED_BY="VIF">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="SBL"
+			   SCRIPT="Function Service_PreInvokeMethod (MethodName As String, Inputs As PropertySet, Outputs As PropertySet) As Integer
+	Select Case Methodname
+	Case &quot;PasswordExpiration&quot; 
+		ActiveDirectoryData Inputs, Outputs
+		Service_PreInvokeMethod = CancelOperation
+	Case Else
+		Service_PreInvokeMethod = ContinueOperation
+	End Select 
+End Function"
+			   SEQUENCE="2"
+			   UPDATED="01/01/2000 00:01:03"
+			   UPDATED_BY="VIF"
+			   CREATED="01/01/2000 00:01:20"
+			   CREATED_BY="VIF">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+
