@@ -13,3 +13,4 @@ Input parameters:
 Output:
 - PasswordRequired - Y if need password for identification, N - user log in w/o password
 - PasswordNeverExpires - some users do not need to change the password.
+- Fields about password expiraion date.
